@@ -1,7 +1,7 @@
 console.log("preview.js 1");
 const btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 2");
-for (var i = 0 ; i < comment.length; i++){
+for (var i = 0 ; i < btns.length; i++){
   console.log("preview.js 3");
   btns[i].addEventListener("click", function onClick(){
     console.log("preview.js 4");
