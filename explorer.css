@@ -160,3 +160,19 @@ a.folder {
 th, td:not(:first-child){
     user-select: none;
 }
+
+main.e-p {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#preview {
+    margin-top: 30px;
+    margin-left: 9.5px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-image: linear-gradient(#0003, #0003) 1 1;
+    padding-left: 9.5px;
+    background: #c1dbf2 content-box;
+    border-radius: 30px;
+}
