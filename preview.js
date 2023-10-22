@@ -1,5 +1,5 @@
 console.log("preview.js")
-const btns = document.getElementsByClassName('preview');
+const btns = document.getElementsByClassName('preview-btn');
 for (const btn of btns){
   btn.addEventListener("click", function onClick(){
     const main = document.getElementsByClassName('explorer');
