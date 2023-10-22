@@ -140,6 +140,10 @@ table.files :is(td, th):last-child {
     text-align: right;
 }
 
+table.files td:last-child {
+    font-size: 0;
+}
+
 table.files td:last-child a {
     display: inline-flex;
     width: 20px;
