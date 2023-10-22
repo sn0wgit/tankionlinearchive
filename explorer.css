@@ -3,7 +3,6 @@
     flex-flow: column nowrap;
     gap: 10px;
     background: #c1dbf2;
-    width: initial;
     height: calc(100% - 60px);
     margin-top: 30px;
     border: 15px solid #c1dbf2;
@@ -157,27 +156,37 @@ a.folder {
     background: url('/tankionlinearchive/resources/folder.svg') center / 100% no-repeat;
 }
 
-a.preview {
-    background: url('/tankionlinearchive/resources/preview.svg') center / 100% no-repeat;
-}
-
 th, td:not(:first-child){
     user-select: none;
 }
 
 main.e-p {
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main.e-p .explorer {
+    width: calc((100% - 50px) * 0.7);
+}
+
+hr {
+    background: #0003;
+    width: 1px;
+    height: calc(100% - 30px);
+    border: 0;
+    margin: 30px 9.5px;
+    order: 1;
 }
 
 #preview {
-    width: calc(100% - 10px);
+    width: 0;
     height: calc(100% - 30px);
     margin-top: 30px;
-    margin-left: 9.5px;
     border: 0;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-image: linear-gradient(#0003, #0003) 1 1;
-    padding-left: 9.5px;
+    order: 2;
+    overflow: auto;
+}
+
+#preview[src*=".html"] {
+    width: calc((100% - 50px) * 0.3);
 }
