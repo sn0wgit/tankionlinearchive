@@ -20,6 +20,7 @@ header {
     padding: 8px 20px;
     box-sizing: border-box;
     border-bottom: 1px solid #000;
+    user-select: none;
 }
 header a{
     font: 400 32px 'IBM Plex Mono';
@@ -33,7 +34,7 @@ header a.mini-logo {
 }
 main{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     margin: 61px 30px 30px;
     width: 100%;
     height: calc(100% - 91px);
@@ -121,6 +122,7 @@ b {
 }
 .card:hover span{
     color: #fff;
+    user-select: none;
 }
 .card img {animation: 8s linear 0s infinite paused flower-inner-rotation;}
 .card:hover img {animation-play-state: running;}
