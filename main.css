@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 @font-face {font-family: "Next Art"; font-weight: 700; src:url("/resources/NEXT ART_Heavy.ptf") format("opentype");}
 body {
-	display: flex;
+    display: flex;
     margin: 0;
 }
 header {
@@ -23,8 +23,7 @@ header a{
     cursor: pointer;
 }
 main{
-    margin-top: 61px;
-    margin-bottom: 10px;
+    margin: 61px 30px 30px;
     width: 100%;    
 }
 img[alt]{font-family: 'IBM Plex Mono';}
