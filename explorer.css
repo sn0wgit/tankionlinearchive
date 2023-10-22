@@ -2,16 +2,24 @@ main.explorer {
     flex-flow: row-reverse wrap;
 }
 
+main:not(.explorer)>:not(div) {
+    display: none;
+}
+
 div.explorer {
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
     background: #c1dbf2;
-    width: calc((100% - 50px) * 0.7);
+    width: calc(100% - 30px);
     height: calc(100% - 60px);
     margin-top: 30px;
     border: 15px solid #c1dbf2;
     border-radius: 20px;
+}
+
+main.explorer div.explorer{
+    width: calc((100% - 50px) * 0.7);
 }
 
 .breadcrumb {
