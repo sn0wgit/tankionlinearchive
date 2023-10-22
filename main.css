@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-@font-face {font-family: "Next Art"; font-weight: 700; src:url("/resources/NEXT ART_Heavy.ptf") format("opentype");}
+@font-face {font-family: "Next Art"; font-weight: 700; src:url("/resources/NEXT ART_Heavy.otf") format("opentype");}
 body {
     display: flex;
     margin: 0;
