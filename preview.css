@@ -2,6 +2,10 @@ body{
     background: transparent;
     margin: 0;
 }
+div{
+    background: #c1dbf2;
+    border-radius: 30px;
+}
 img {
     display: flex;
     margin: 30px auto;
