@@ -84,12 +84,11 @@ html, body {
 .breadcrumb .directories {
     display: flex;
     flex-flow: column wrap;
-    gap: 10px;
     background: #a1c8eb;
     width: max-content;
     margin-top: 10px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px 20px;
     z-index: 1;
 }
 
@@ -99,13 +98,14 @@ html, body {
     position: relative;
     color: #fff;
     text-decoration: unset;
+    padding: 5px 0;
 }
 
 .breadcrumb .directories a::before {
     content: '';
     display: flex;
     position: absolute;
-    inset: -10px;
+    inset: -5px -10px;
     pointer-events: none;
     border-radius: 10px;
 }
