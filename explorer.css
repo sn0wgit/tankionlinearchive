@@ -122,12 +122,18 @@ html, body {
 
 table.files {
     font: 400 14px 'IBM Plex Mono';
+    border-spacing: 0;
 }
 
 table.files th {
     color: #4491d7;
     font-weight: 500;
     text-align: left;
+}
+
+table.files :is(th, td) {
+    padding: 0;
+    height: 24px;
 }
 
 table.files :is(td, th):last-child {
