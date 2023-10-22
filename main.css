@@ -36,6 +36,15 @@ center{
     align-items: center;
     height: 305px;
 }
+center h1 {
+    font-family: 'Next Art';
+    font-size: 58px;
+    margin: 0;
+}
+span.desc {
+    color: #000;
+    font-size: 30px;
+};
 h2 {
     font: 400 30px 'IBM Plex Mono';
 }
