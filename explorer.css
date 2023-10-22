@@ -7,7 +7,7 @@ div.explorer {
     flex-flow: column nowrap;
     gap: 10px;
     background: #c1dbf2;
-    width: 100%;
+    width: calc((100% - 50px) * 0.7);
     height: calc(100% - 60px);
     margin-top: 30px;
     border: 15px solid #c1dbf2;
@@ -153,6 +153,10 @@ table.files td:last-child a {
     height: 20px;
 }
 
+a.preview {
+    background: url('/tankionlinearchive/resources/preview.svg') center / 100% no-repeat;
+}
+
 a.new_tab {
     background: url('/tankionlinearchive/resources/new_tab.svg') center / 100% no-repeat;
 }
@@ -165,12 +169,8 @@ th, td:not(:first-child){
     user-select: none;
 }
 
-#preview[src*=".html"] ~ .explorer {
-    width: calc((100% - 50px) * 0.7);
-}
-
 hr {
-    display: none;
+    display: flex;
     background: #0003;
     width: 1px;
     height: calc(100% - 30px);
@@ -178,18 +178,10 @@ hr {
     margin: 30px 9.5px;
 }
 
-#preview[src*=".html"] ~ hr{
-    display: flex;
-}
-
-#preview {
-    width: 0;
+.preview {
+    width: calc((100% - 50px) * 0.3);
     height: calc(100% - 30px);
     margin-top: 30px;
     border: 0;
     overflow: auto;
-}
-
-#preview[src*=".html"] {
-    width: calc((100% - 50px) * 0.3);
 }
