@@ -161,7 +161,7 @@ table.files td:last-child a {
     height: 20px;
 }
 
-a.preview {
+a.preview-btn {
     background: url('/tankionlinearchive/resources/preview.svg') center / 100% no-repeat;
 }
 
