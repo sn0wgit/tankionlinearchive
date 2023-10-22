@@ -32,8 +32,11 @@ header a.mini-logo {
     text-decoration: unset;
 }
 main{
+    display: flex;
+    flex-flow: column wrap;
     margin: 61px 30px 30px;
-    width: 100%;    
+    width: 100%;
+    height: calc(100% - 91px);
 }
 img[alt]{font-family: 'IBM Plex Mono';}
 .big-logo{
