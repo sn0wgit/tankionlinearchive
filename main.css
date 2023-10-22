@@ -22,6 +22,10 @@ header a{
     color: #000;
     cursor: pointer;
 }
+header a.mini-logo {
+    font-family: 'Next Art';
+    text-decoration: unset;
+}
 main{
     margin: 61px 30px 30px;
     width: 100%;    
@@ -32,6 +36,7 @@ img[alt]{font-family: 'IBM Plex Mono';}
 }
 center{
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     height: 305px;
@@ -44,7 +49,7 @@ center h1 {
 span.desc {
     color: #000;
     font-size: 30px;
-};
+}
 h2 {
     font: 400 30px 'IBM Plex Mono';
 }
