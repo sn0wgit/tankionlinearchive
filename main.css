@@ -12,7 +12,7 @@ header {
     position: fixed;
     height: 61px;
     width: 100%;
-    padding: 8px 12px;
+    padding: 8px 20px;
     box-sizing: border-box;
     border-bottom: 1px solid #000;
 }
@@ -71,7 +71,7 @@ b {
     width: 252px;
     height: 216px;
     border-radius: 30px;
-    cursor: pointer;
+    text-decoration: unset;
     transition: all ease-in-out 0.15s;
     text-align: center;
 }
@@ -79,9 +79,9 @@ b {
     background: #a1c8eb;
     border-radius: 46px;
 }
-span{
+.card span{
     color: #4491d7;
-    font: 400 24px 'IBM Plex Mono'; 
+    font: 400 24px 'IBM Plex Mono';
     transition: all ease-in-out 0.15s;
 }
 .flower{
