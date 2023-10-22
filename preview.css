@@ -1,3 +1,7 @@
+body{
+    background: transparent;
+    margin: 0;
+}
 img {
     display: flex;
     margin: 30px auto;
