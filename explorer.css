@@ -45,6 +45,30 @@ html, body {
     margin: 0 2px 0 5px;
 }
 
+.breadcrumb>a {
+    display: flex;
+    align-items: center;
+    background: #a1c8eb;
+    border-radius: 20px 0 0 20px;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: unset;
+}
+
+.breadcrumb>a+details {
+    margin-left: 3px;
+    min-width: 30px;
+    width: 30px;
+}
+
+.breadcrumb>a+details>summary {
+    border-radius: 0 20px 20px 0;
+}
+
+.breadcrumb>a+details>summary::after {
+    margin-left: 0;
+}
+
 .breadcrumb > * {
     display: flex;
     height: 40px;
