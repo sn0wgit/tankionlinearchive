@@ -3,7 +3,7 @@
     flex-flow: column wrap;
     gap: 10px;
     background: #c1dbf2;
-    width: 100%;
+    width: initial;
     height: calc(100% - 60px);
     margin-top: auto;
     border-radius: 20px;
