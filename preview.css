@@ -1,0 +1,10 @@
+img {
+    display: flex;
+    margin: 30px auto;
+    max-width: calc(100% - 60px);
+}
+
+p {
+    font: 400 16px 'IBM Plex Mono';
+    margin: 30px;
+}
