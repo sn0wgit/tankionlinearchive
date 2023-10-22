@@ -51,6 +51,7 @@ span.desc {
     font-size: 30px;
 }
 h2 {
+    max-width: 855px;
     font: 400 30px 'IBM Plex Mono';
 }
 b {
@@ -116,18 +117,36 @@ b {
 .card img {animation: 8s linear 0s infinite paused flower-inner-rotation;}
 .card:hover img {animation-play-state: running;}
 @media (orientation: portrait){
-    main{margin: 61px 15px 10px;}
-    .cards{justify-content: center;}
-    h2{font: 400 26px 'IBM Plex Mono';}
-    b{font: 500 33.8px 'IBM Plex Mono';}
+    main{margin: 61px 15px 15px;}
+    h2{font-size: 26px;}
+    b{font-size: 33.8px;}
 }
-@media (orientation: landscape) and (max-width: 1600px){
-    main{
-        margin: 61px 30px 10px;
+@media screen and (max-width: 1060px){
+    .cards{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, calc(100% / 3 - 11px));
+        width: 100%;
+    }
+    .card{
+        width: auto;
+        aspect-ratio: unset;
     }
 }
-@media (orientation: landscape) and (min-width: 930px){
-    h2{
-        width: 855px;
+@media screen and (max-width: 832px){
+    .cards{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, calc(50% - 8px));
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .cards{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+        width: 100%;
     }
 }
