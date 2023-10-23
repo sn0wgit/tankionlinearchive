@@ -44,6 +44,11 @@ for (let i = 0; i < btns.length; i++) {
   });
 }*/
 //ChatGPT (2) + me
+function addActive() {
+  const main = document.querySelector('.explorer');
+  main.classList.add('active');
+  console.log("preview.js 4");
+}
 console.log("preview.js 1");
 const btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 2");
@@ -52,7 +57,10 @@ if (btns.length == 0){
   console.log("preview.js IF");
   console.log("preview.js 3");
   console.log(btns);
-  btns.onclick = function(){addActive();};
+  btns.onclick = function() {
+    console.log("preview.js 3+");
+    addActive();
+  };
   console.log("preview.js 5");
 }
 else{
@@ -64,9 +72,4 @@ else{
     btns[i].addEventListener("mousedown", addActive);
     console.log("preview.js 5 [" + i + "]");
   }
-}
-function addActive() {
-  const main = document.querySelector('.explorer');
-  main.classList.add('active');
-  console.log("preview.js 4");
 }
