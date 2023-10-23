@@ -12,7 +12,7 @@ if (btns.length == 0){
     console.log("preview.js 3");
     addActive();
   };*/
-  btns.addEventListener("onmouseover", addActive);
+  document.querySelector('.preview-btn').addEventListener("click", addActive);
   console.log("preview.js 5");
 }
 else{
