@@ -52,12 +52,13 @@ if (btns.length == 0){
   console.log("preview.js IF");
   console.log("preview.js 3");
   console.log(btns);
-  btns[0].addEventListener("mousedown", addActive);
+  btns.onclick = function(){addActive();};
   console.log("preview.js 5");
 }
 else{
   console.log("preview.js ELSE");
-  for (let i = 0; i < btns.length; i++) {
+//for (let i = 0; i < btns.length; i++) {
+  for (var i in btns) {
     console.log(btns[i]);
     console.log("preview.js 3 [" + i + "]");
     btns[i].addEventListener("mousedown", addActive);
