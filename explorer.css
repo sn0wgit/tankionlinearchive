@@ -90,14 +90,29 @@ main.explorer.active div.window{
 
 .breadcrumb .directories {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     background: #a1c8eb;
     width: max-content;
+    border: 10px solid #a1c8eb;
+    max-height: calc(100vh - 216px);
+    overflow-y: auto;
     margin-top: 10px;
     border-radius: 20px;
-    padding: 15px 20px;
+    padding: 5px 10px;
     z-index: 1;
     user-select: none;
+}
+
+.breadcrumb .directories::-webkit-scrollbar {
+    width: 14px;
+}
+.breadcrumb .directories::-webkit-scrollbar-track {
+    background: #fff0;
+}
+.breadcrumb .directories::-webkit-scrollbar-thumb {
+    background: #fff content-box;
+    border-radius: 14px;
+    border: 3px solid #fff0;
 }
 
 .breadcrumb .directories a {
@@ -192,4 +207,15 @@ iframe.preview {
     margin-top: 30px;
     border: 0;
     overflow: auto;
+}
+
+.breadcrumb>a:focus-visible, .breadcrumb>details>summary:focus-visible {
+    outline: 3px solid #a1c8eb;
+    outline-offset: 3px;
+}
+
+table.files td:last-child a:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: -1px;
+    border-radius: 3px;
 }
