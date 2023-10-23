@@ -47,7 +47,9 @@ for (let i = 0; i < btns.length; i++) {
 console.log("preview.js 1");
 const btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 2");
+console.log("btns.length");
 if (btns.length = 0){
+  console.log("preview.js IF");
   console.log("preview.js 3");
   btns.addEventListener("click", function onClick() {
     const main = document.querySelector('.explorer');
@@ -56,6 +58,7 @@ if (btns.length = 0){
   });
 }
 else{
+  console.log("preview.js ELSE");
   for (let i = 0; i < btns.length; i++) {
     console.log("preview.js 3E [" + i + "]");
     btns[i].addEventListener("click", function onClick() {
