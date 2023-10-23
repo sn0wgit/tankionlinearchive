@@ -45,7 +45,7 @@ for (let i = 0; i < btns.length; i++) {
 }*/
 //ChatGPT (2) + me
 console.log("preview.js 1");
-var btns = document.getElementsByClassName('preview-btn');
+const btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 2");
 console.log(btns.length);
 console.log(btns);
