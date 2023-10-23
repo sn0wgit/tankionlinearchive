@@ -103,12 +103,18 @@ main.explorer.active div.window{
     user-select: none;
 }
 
+details:has(~ details[open])>.directories {
+    display: none;
+}
+
 .breadcrumb .directories::-webkit-scrollbar {
     width: 14px;
 }
+
 .breadcrumb .directories::-webkit-scrollbar-track {
     background: #fff0;
 }
+
 .breadcrumb .directories::-webkit-scrollbar-thumb {
     background: #fff content-box;
     border-radius: 14px;
