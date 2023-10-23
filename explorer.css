@@ -194,6 +194,10 @@ a.folder {
     background: url('/tankionlinearchive/resources/folder.svg') center / 100% no-repeat;
 }
 
+a.download {
+    background: url('/tankionlinearchive/resources/download.svg') center / 100% no-repeat;
+}
+
 th, td:not(:first-child){
     user-select: none;
 }
