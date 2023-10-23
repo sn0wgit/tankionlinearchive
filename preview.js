@@ -49,6 +49,7 @@ const btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 2");
 console.log(btns.length);
 console.log(btns);
+console.log(btns[btns.length]);
 console.log(btns[0]);
 console.log(btns[1]);
 console.log(btns[2]);
