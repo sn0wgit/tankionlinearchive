@@ -52,7 +52,7 @@ if (btns.length == 0){
   console.log("preview.js IF");
   console.log("preview.js 3");
   console.log(btns);
-  btns.addEventListener("mousedown", addActive);
+  btns[0].addEventListener("mousedown", addActive);
   console.log("preview.js 5");
 }
 else{
