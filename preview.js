@@ -57,7 +57,7 @@ if (btns.length == 0){
   console.log("preview.js IF");
   console.log("preview.js 3");
   console.log(btns);
-  btns.addEventListener("click", addActive());
+  btns[0].addEventListener("click", addActive());
   console.log("preview.js 5");
 }
 else{
