@@ -22,4 +22,4 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log("preview.js 5 [" + i + "]");
     }
   }
-}
+});
