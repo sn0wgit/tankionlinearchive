@@ -8,10 +8,11 @@ const btns = document.getElementsByClassName('preview-btn');
 if (btns.length == 0){
   console.log("preview.js IF");
   console.log(btns);
-  btns.onclick = function() {
+  /*btns.onclick = function() {
     console.log("preview.js 3");
     addActive();
-  };
+  };*/
+  btns.addEventListener("click", addActive);
   console.log("preview.js 5");
 }
 else{
