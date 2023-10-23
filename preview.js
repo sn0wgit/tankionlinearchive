@@ -36,9 +36,22 @@ for (let i = 0; i < btns.length; i++) {
   })(i));
 }*/
 //ChatGPT (2)
+/*const btns = document.getElementsByClassName('preview-btn');
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function onClick() {
+    const main = document.querySelector('.explorer');
+    main.classList.add('active');
+  });
+}*/
+//ChatGPT (2) + me
 console.log("preview.js 1");
-const btns = document.getElementsByClassName('preview-btn');
+var btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 2");
+console.log(btns.length);
+console.log(btns);
+console.log(btns[0]);
+console.log(btns[1]);
+console.log(btns[2]);
 for (let i = 0; i < btns.length; i++) {
   console.log("preview.js 3 [" + i + "]");
   btns[i].addEventListener("click", function onClick() {
