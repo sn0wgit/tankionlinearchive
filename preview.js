@@ -11,7 +11,7 @@ for (var i = 0 ; i < btns.length; i++){
     console.log("preview.js 5");
   });
 }*/
-//ChatGPT
+//ChatGPT (1)
 /*const btns = document.getElementsByClassName('preview-btn');
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", (function(index) {
@@ -22,8 +22,8 @@ for (let i = 0; i < btns.length; i++) {
     };
   })(i));
 }*/
-//ChatGPT + me
-const btns = document.getElementsByClassName('preview-btn');
+//ChatGPT (1) + me
+/*const btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 1");
 for (let i = 0; i < btns.length; i++) {
   console.log("preview.js 1 [" + i + "]");
@@ -34,4 +34,16 @@ for (let i = 0; i < btns.length; i++) {
       main.classList.add('active');
     };
   })(i));
+}*/
+//ChatGPT (2)
+console.log("preview.js 1");
+const btns = document.getElementsByClassName('preview-btn');
+console.log("preview.js 2");
+for (let i = 0; i < btns.length; i++) {
+  console.log("preview.js 3 [" + i + "]");
+  btns[i].addEventListener("click", function onClick() {
+    const main = document.querySelector('.explorer');
+    main.classList.add('active');
+    console.log("preview.js 4 (" + i + ")");
+  });
 }
