@@ -56,12 +56,14 @@ console.log(btns.length);
 if (btns.length == 0){
   console.log("preview.js IF");
   console.log("preview.js 3");
+  console.log(btns);
   btns.addEventListener("click", addActive());
   console.log("preview.js 5");
 }
 else{
   console.log("preview.js ELSE");
   for (let i = 0; i < btns.length; i++) {
+    console.log(btns[i]);
     console.log("preview.js 3 [" + i + "]");
     btns[i].addEventListener("click", addActive());
     console.log("preview.js 5 [" + i + "]");
