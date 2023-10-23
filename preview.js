@@ -47,7 +47,7 @@ for (let i = 0; i < btns.length; i++) {
 console.log("preview.js 1");
 const btns = document.getElementsByClassName('preview-btn');
 console.log("preview.js 2");
-console.log("btns.length");
+console.log(btns.length);
 if (btns.length = 0){
   console.log("preview.js IF");
   console.log("preview.js 3");
