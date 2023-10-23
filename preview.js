@@ -56,6 +56,7 @@ if (btns.length == 0){
     main.classList.add('active');
     console.log("preview.js 4");
   });
+  console.log("preview.js 5");
 }
 else{
   console.log("preview.js ELSE");
@@ -66,5 +67,6 @@ else{
       main.classList.add('active');
       console.log("preview.js 4E (" + i + ")");
     });
+    console.log("preview.js 5E [" + i + "]");
   }
 }
