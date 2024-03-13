@@ -112,6 +112,15 @@ b {
         transform: rotate(360deg);
     }
 }
+.card:hover span{
+    color: #fff;
+    user-select: none;
+}
+.card img {
+    animation: 8s linear 0s infinite paused flower-inner-rotation;
+    width: 30px;
+}
+.card:hover img {animation-play-state: running;}
 @keyframes flower-inner-rotation{
     0%{
         transform: rotate(0deg);
@@ -120,12 +129,6 @@ b {
         transform: rotate(-360deg);
     }
 }
-.card:hover span{
-    color: #fff;
-    user-select: none;
-}
-.card img {animation: 8s linear 0s infinite paused flower-inner-rotation;}
-.card:hover img {animation-play-state: running;}
 @media (orientation: portrait){
     main{margin: 61px 15px 15px;}
     h2{font-size: 26px;}
