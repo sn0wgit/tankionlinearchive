@@ -197,19 +197,19 @@ table.files td:last-child a {
 }
 
 a.preview-btn {
-    background: url('/tankionlinearchive/resources/preview.svg') center / 100% no-repeat;
+    background: url('resources/preview.svg') center / 100% no-repeat;
 }
 
 a.new_tab {
-    background: url('/tankionlinearchive/resources/new_tab.svg') center / 100% no-repeat;
+    background: url('resources/new_tab.svg') center / 100% no-repeat;
 }
 
 a.folder {
-    background: url('/tankionlinearchive/resources/folder.svg') center / 100% no-repeat;
+    background: url('resources/folder.svg') center / 100% no-repeat;
 }
 
 a.download {
-    background: url('/tankionlinearchive/resources/download.svg') center / 100% no-repeat;
+    background: url('resources/download.svg') center / 100% no-repeat;
 }
 
 th, td:not(:first-child){
